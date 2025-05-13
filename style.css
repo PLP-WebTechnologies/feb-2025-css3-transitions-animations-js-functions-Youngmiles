@@ -1,0 +1,59 @@
+body {
+    transition: background-color 0.5s, color 0.5s;
+    text-align: center;
+    padding: 2rem;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.pulse {
+    width: 100px;
+    height: 100px;
+    margin: 2rem auto;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.pulse:hover {
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.bounce-animation {
+    animation: bounce 0.5s ease;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.animate-button {
+    background-color: #FF9800;
+    color: white;
+}
+
+.preferences {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
